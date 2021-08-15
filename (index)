@@ -1,0 +1,34 @@
+"use strict";
+
+for (var age = 30; age < 40; age++) {
+  console.log("I'm ".concat(age, " years old. Happy birthday to me!"));
+  debugger;
+}
+
+var gifts = ["teddy bear", "drone", "doll"];
+
+function wrapGifts(gifts) {
+  for (var i = 0; i < gifts.length; i++) {
+    console.log("Wrapped ".concat(gifts[i], " and added a bow!"));
+  }
+
+  return gifts;
+}
+
+wrapGifts(gifts);
+
+function writeCards(names, event) {
+  for (var i = 0; i < names.length; i++) {
+    console.log("Thank you, ".concat(names[i], ", for the wonderful ").concat(event, " gift!"));
+  }
+}
+
+function countDown() {
+  var i = 10;
+
+  while (i >= 0 && i < 11) {
+    console.log(i--);
+  }
+}
+
+countDown();
